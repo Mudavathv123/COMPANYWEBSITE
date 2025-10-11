@@ -225,10 +225,11 @@ button#submit:hover {
 .founder-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
+    gap: 80px;
     max-width: 1200px;
     width: 100%;
     padding: 0 20px;
+    margin-top: 80px;
 }
 
 .card {
@@ -244,7 +245,7 @@ button#submit:hover {
     transform-style: preserve-3d;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid ra(255, 255, 255, 0.8);
 }
 
 .card::before {
@@ -262,9 +263,18 @@ button#submit:hover {
 
 .card:hover::before {
     opacity: 0.1;
+}   
+
+.centered-card {
+    z-index: 2;
+    margin-top: -60px;
+    box-shadow: 0 32px 90px rgba(255, 204, 0, 0.18), 0 12px 40px rgba(0,0,0,0.12);
+    border: 2.5px solid #ffcc00;
+    background: linear-gradient(135deg, #fffbe6 0%, #fffde4 100%);
 }
 
-.card-image {
+
+.card-image {       
     position: absolute;
     top: 0;
     left: 0;
@@ -311,7 +321,7 @@ button#submit:hover {
 .card-info p {
     font-size: 1rem;
     line-height: 1.7;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     opacity: 0.95;
     font-family: 'Poppins', sans-serif;
     color: #e2e8f0;
@@ -351,6 +361,7 @@ button#submit:hover {
     transform: translateY(0);
     max-height: 75%;
     box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.4);
+
 }
 
 /* Enhanced professional effects */
